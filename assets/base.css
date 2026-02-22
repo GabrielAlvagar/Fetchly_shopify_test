@@ -3206,4 +3206,12 @@ details-disclosure > details {
   padding-top: 18px;
   padding-bottom: 18px;
 }
+.banner__eyebrow{
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.85;
+  margin: 0 0 1rem;
+}
 
