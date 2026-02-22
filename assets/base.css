@@ -3149,7 +3149,7 @@ details-disclosure > details {
 }
 /* ===== Custom: Transparent header over hero (Homepage) ===== */
 
-/* 1) Header transparente y encima */
+
 .shopify-section-group-header-group .header-wrapper{
   position: absolute;
   top: 0; left: 0;
@@ -3158,12 +3158,12 @@ details-disclosure > details {
   z-index: 50;
 }
 
-/* evita borde inferior si está activo */
+
 .shopify-section-group-header-group .header-wrapper--border-bottom{
   border-bottom: 0 !important;
 }
 
-/* 2) Colores blancos (logo, menú, íconos) */
+
 .shopify-section-group-header-group .header__heading-link .h2,
 .shopify-section-group-header-group .header__menu-item,
 .shopify-section-group-header-group .header__active-menu-item,
@@ -3174,7 +3174,7 @@ details-disclosure > details {
   fill: #fff !important;
 }
 
-/* 3) Menú centrado (ya casi lo está, solo lo aseguramos) */
+
 @media screen and (min-width: 990px){
   .shopify-section-group-header-group .header--middle-center:not(.drawer-menu) .header__inline-menu{
     justify-self: center;
@@ -3185,7 +3185,7 @@ details-disclosure > details {
   }
 }
 
-/* 4) Iconos con borde circular */
+
 .shopify-section-group-header-group .header__icon{
   border: 1px solid rgba(255,255,255,.6);
   border-radius: 999px;
@@ -3194,14 +3194,14 @@ details-disclosure > details {
   margin-left: 8px;
 }
 
-/* corrige tamaño interno (tu tema usa 4.4rem por default) */
+
 .shopify-section-group-header-group .header__icon,
 .shopify-section-group-header-group .header__icon--cart .icon{
   width: 34px;
   height: 34px;
 }
 
-/* 5) Padding para que respire */
+
 .shopify-section-group-header-group .header{
   padding-top: 18px;
   padding-bottom: 18px;

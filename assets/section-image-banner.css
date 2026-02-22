@@ -6,6 +6,10 @@
 
 .banner__box {
   text-align: center;
+  /* Background of text */
+  background: transparent;
+  box-shadow: none;
+  border: none;
 }
 
 @media only screen and (max-width: 749px) {
@@ -451,4 +455,16 @@
   .banner--desktop-transparent .rte a:hover {
     color: currentColor;
   }
+}
+/* Hero button transparent */
+.banner .button {
+  background: transparent !important;
+  border: 1px solid #ffffff !important;
+  color: #ffffff !important;
+}
+
+/* Hover effect */
+.banner .button:hover {
+  background: #ffffff !important;
+  color: #000000 !important;
 }
