@@ -12,15 +12,25 @@
     "6a3bb789-ce10-45f5-ae67-e2063ef8c76b": {
       "type": "image-banner",
       "blocks": {
-        "features_gK8hic": {
-          "type": "features",
+        "feature_card_KwJAAy": {
+          "type": "feature_card",
           "settings": {
-            "title_1": "US based storage",
-            "text_1": "Fast and reliable delivery.",
-            "title_2": "40+ designers",
-            "text_2": "Explore our selection of African fashion designers.",
-            "title_3": "Earn points with every order",
-            "text_3": "Join our loyalty program and get bonus points."
+            "title": "US based storage",
+            "text": "Fast and reliable delivery."
+          }
+        },
+        "feature_card_XAEQdR": {
+          "type": "feature_card",
+          "settings": {
+            "title": "US based storage",
+            "text": "Fast and reliable delivery."
+          }
+        },
+        "feature_card_9ViiHc": {
+          "type": "feature_card",
+          "settings": {
+            "title": "US based storage",
+            "text": "Fast and reliable delivery."
           }
         },
         "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-0": {
@@ -51,7 +61,9 @@
         }
       },
       "block_order": [
-        "features_gK8hic",
+        "feature_card_KwJAAy",
+        "feature_card_XAEQdR",
+        "feature_card_9ViiHc",
         "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-0",
         "text_6zYEpx",
         "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-2"
@@ -71,14 +83,42 @@
         "show_text_below": true
       }
     },
+    "featured_collection_iQeCyR": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "automated-collection",
+        "products_to_show": 10,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
         "title": "<strong>Featured</strong>",
         "heading_size": "h2",
-        "description": "",
+        "description": "<p>New arrivals</p>",
         "show_description": true,
-        "description_style": "subtitle",
+        "description_style": "uppercase",
         "collection": "automated-collection",
         "products_to_show": 6,
         "columns_desktop": 3,
@@ -152,8 +192,8 @@
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
-        "product": "",
-        "color_scheme": "background-1",
+        "product": "the-inventory-not-tracked-snowboard",
+        "color_scheme": "inverse",
         "secondary_background": false,
         "media_size": "medium",
         "constrain_to_viewport": true,
@@ -207,13 +247,14 @@
         "color_scheme": "accent-1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
   "order": [
     "6a3bb789-ce10-45f5-ae67-e2063ef8c76b",
+    "featured_collection_iQeCyR",
     "featured_collection",
     "featured_product_ckDtzK",
     "f1552b18-6017-4231-810d-74e61da22c37"
