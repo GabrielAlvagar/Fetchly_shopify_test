@@ -413,6 +413,7 @@
   gap: 1rem;
   max-width: 45rem;
   word-break: break-word;
+  background: transparent;
 }
 
 @media screen and (max-width: 749px) {
@@ -456,6 +457,7 @@
     color: currentColor;
   }
 }
+
 /* Hero button transparent */
 .banner .button {
   background: transparent !important;

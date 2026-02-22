@@ -159,6 +159,27 @@
       {%- endfor -%}
     </div>
   </div>
+  {%- assign feature_blocks = section.blocks | where: 'type', 'feature_card' -%}
+{%- if feature_blocks.size > 0 -%}
+  <div class="banner__features page-width">
+    <div class="banner__features-grid">
+      {%- for block in feature_blocks -%}
+        <div class="banner__feature-card" {{ block.shopify_attributes }}>
+          {% if block.settings.icon != blank %}
+            <div class="banner__feature-icon">
+              {{ block.settings.icon | image_url: width: 64 | image_tag: loading: 'lazy' }}
+            </div>
+          {% endif %}
+
+          <div class="banner__feature-content">
+            <div class="banner__feature-title">{{ block.settings.title }}</div>
+            <div class="banner__feature-text">{{ block.settings.text }}</div>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+{%- endif -%}
 </div>
 
 {% schema %}
@@ -488,9 +509,19 @@
           "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
         }
       ]
-    }
+    },
+    {
+  "type": "feature_card",
+  "name": "Feature card",
+  "settings": [
+    { "type": "image_picker", "id": "icon", "label": "Icon" },
+    { "type": "text", "id": "title", "label": "Title", "default": "US based storage" },
+    { "type": "text", "id": "text", "label": "Text", "default": "Fast and reliable delivery." }
+  ]
+}
   ],
   "presets": [
+    
     {
       "name": "t:sections.image-banner.presets.name",
       "blocks": [
@@ -502,7 +533,10 @@
         },
         {
           "type": "buttons"
-        }
+        },
+        { "type": "feature_card" },
+    { "type": "feature_card" },
+    { "type": "feature_card" }
       ]
     }
   ]

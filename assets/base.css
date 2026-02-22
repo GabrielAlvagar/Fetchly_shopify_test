@@ -3215,3 +3215,53 @@ details-disclosure > details {
   margin: 0 0 1rem;
 }
 
+.hero-feature-cards-section {
+  margin-top: -9rem; /* sube las cards encima del hero */
+  position: relative;
+  z-index: 5;
+}
+
+.hero-feature-cards__grid{
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 750px){
+  .hero-feature-cards__grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*hero cards*/
+.banner__features{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3rem;
+  z-index: 5;
+}
+
+.banner__features-grid{
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.banner__feature-card{
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+}
+
+.banner__feature-title{
+  color: #fff;
+  font-weight: 600;
+}
+
+.banner__feature-text{
+  color: rgba(255,255,255,0.8);
+  font-size: 1.3rem;
+}

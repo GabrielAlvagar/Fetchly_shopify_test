@@ -12,6 +12,17 @@
     "6a3bb789-ce10-45f5-ae67-e2063ef8c76b": {
       "type": "image-banner",
       "blocks": {
+        "features_gK8hic": {
+          "type": "features",
+          "settings": {
+            "title_1": "US based storage",
+            "text_1": "Fast and reliable delivery.",
+            "title_2": "40+ designers",
+            "text_2": "Explore our selection of African fashion designers.",
+            "title_3": "Earn points with every order",
+            "text_3": "Join our loyalty program and get bonus points."
+          }
+        },
         "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-0": {
           "type": "heading",
           "settings": {
@@ -40,6 +51,7 @@
         }
       },
       "block_order": [
+        "features_gK8hic",
         "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-0",
         "text_6zYEpx",
         "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-2"
